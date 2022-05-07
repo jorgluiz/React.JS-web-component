@@ -1,0 +1,23 @@
+.search1,
+.search2,
+.search3,
+.search4,
+.search5,
+.search6,
+.search7,
+.search8,
+.search9,
+.search10,
+.search11,
+.search12,
+.search13,
+.search14{
+    border: ridge;
+    outline: 0;
+}
+
+.flex3-submit{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}

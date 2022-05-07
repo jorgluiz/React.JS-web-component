@@ -1,0 +1,37 @@
+.container-dialog{
+    position: absolute;
+    margin: 150px;
+    left: 350px;
+}
+
+.dialog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 150px;
+    background-color: #d3d3d3;
+}
+
+.confirm.active{
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+.inactive{
+    /* visibility: visible; */
+    opacity: 0;
+}
+
+.buttons{
+    margin: 10px 0 0 0;
+}
+
+.button-no{
+    display: flex;
+}
+
+.button-yes{
+    margin: 0 10px;
+}

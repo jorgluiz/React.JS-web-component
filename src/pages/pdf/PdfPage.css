@@ -1,0 +1,38 @@
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css'); */
+
+
+.container-pdf{
+    display: flex;
+    justify-content: center;
+    /* justify-items: center; */
+    margin: 7px 0;
+    /* width: 100vw; */
+}
+
+.container-pdf-form{
+    margin-left: 10px;
+}
+
+/* campo do formulário */
+.input-pdf{
+    margin-right: 5px;
+    border: ridge;
+    outline: 0;
+}
+
+/* webkit solution */
+::-webkit-input-placeholder { 
+    font-family: FontAwesome;
+    text-align:left; 
+  }
+  /* mozilla solution */
+  input:-moz-placeholder { 
+    font-family: FontAwesome;
+    text-align:right; 
+  }
+
+ /* .input-pdf{
+    width: 188px;
+ height: 16px;
+ font-family: serif;
+} */

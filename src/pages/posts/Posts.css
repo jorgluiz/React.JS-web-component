@@ -1,0 +1,55 @@
+.flex-row-form {
+    display: flex;
+    justify-content: center;
+    /* z-index: 1; */
+}
+
+.flex1-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    /* z-index: 1; */
+}
+
+.flex2-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 0 0;
+    /* z-index: 1; */
+}
+
+/* .input-fone {
+    margin: 0 0 139px 0;
+} */
+
+/* .input-name {
+    width: 360px;
+} */
+
+.posts8 {
+    width: 39px;
+}
+
+.posts1,
+.posts2,
+.posts3,
+.posts4,
+.posts5,
+.posts6,
+.posts7,
+.posts8,
+.posts9,
+.posts10,
+.posts11,
+.posts12,
+.posts13,
+.posts14{
+    margin: 0;
+    outline: 0;
+    border: ridge;
+}
+
+.button-env{
+    margin-top: 30px;
+    width: 100%;
+}

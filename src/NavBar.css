@@ -1,0 +1,22 @@
+.menu-ul{
+    padding: 0px 5px;
+    /* list-style: none; */
+}
+
+.menu-nav .link{
+    display: block;
+    text-decoration: none;
+    color: #444;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.menu-nav .link:hover{
+    background: linear-gradient(135deg, #C7E0F4  0%, #C7E0F4  100%);
+    color: #005A9E;
+}
+
+
+.span{
+    padding: 0 10px;
+}
