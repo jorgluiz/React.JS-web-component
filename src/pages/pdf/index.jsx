@@ -22,30 +22,30 @@ const PdfPage = () => {
             output += `
              <header>
              <address>
-                <h1>MEDICAL RECORDS</h1>
-                <p>Articulation Association</p>
-                <p>Residents' Social</p>
-                <p>Merchants in the Neighborhood of Peixinhos - AASCMBP</p>
+                <h1>REGISTROS MÉDICOS</h1>
+                <p>Associação de Articulação</p>
+                <p>Social dos Residentes</p>
+                <p>Comerciantes do Bairro de Peixinhos - AASCMBP</p>
                 <p> CNPJ: 19.007.800/0001-62 </p>
             </address>
             </header>
             <address>
                 <h3>PATIENT DATA:</h3>
-                <p> NAME: ${newData.name} </p>
-                <p> BIRTH DATE: ${newData.nascimento}</p>
-                <p> SEX: ${newData.sexo}</p>
-                <p> MOTHER'S NAME: ${newData.mae}</p>
-                <p> SUS CARD:  ${newData.sus}</p>
+                <p> Nome: ${newData.name} </p>
+                <p> Data de nascimento: ${newData.nascimento}</p>
+                <p> Sexo: ${newData.sexo}</p>
+                <p> Nome mãe: ${newData.mae}</p>
+                <p> Cartão SUS:  ${newData.sus}</p>
                 <p> CPF: ${newData.cpf}</p>
                 <p> RG: ${newData.rg} </p>
-                <p> ISSUE DATE: ${newData.dataemissao}</p>
-                <p> ZIP CODE: ${newData.cep}</p>
-                <p> ADDRESS: ${newData.endereco}</p>
-                <p>UF: ${newData.uf}</p>
-                <p> CITY: ${newData.cidade}</p>
-                <p>Neighborhood: ${newData.bairro}</p>
-                <p> PHONE: ${newData.fone}</p>
-                <h3>PATIENT INFORMATION</h3>
+                <p> Data de emissão: ${newData.dataemissao}</p>
+                <p> Código postal: ${newData.cep}</p>
+                <p> Logradouro: ${newData.endereco}</p>
+                <p> UF: ${newData.uf}</p>
+                <p> Cidade: ${newData.cidade}</p>
+                <p> Bairro: ${newData.bairro}</p>
+                <p> Telefone: ${newData.fone}</p>
+                <h3> Informação do paciente</h3>
             </address>
             <p className="information"><span>${newData.descricao.substring(0, 100) + "..."}</span></p>
     `
@@ -63,48 +63,48 @@ const PdfPage = () => {
 
     return (
         <Layout>
-                <div className="container-pdf">
-                    <form onSubmit={handleSubmit}>
-                        <input className="input-pdf" type="text" onChange={(e) => setInputValue(e.target.value)} placeholder="&#xF002; Search for CPF" />
-                    </form>
-                    <ClientsPDF responseData={response} />
-                </div>
+            <div className="container-pdf">
+                <form onSubmit={handleSubmit}>
+                    <input className="input-pdf" type="text" onChange={(e) => setInputValue(e.target.value)} placeholder="&#xF002; Search for CPF" />
+                </form>
+                <ClientsPDF responseData={response} />
+            </div>
 
-                <div className="container-pdf-form">
-                    <div ref={containerRef}>
-                        <header>
-                            <address>
-                                <h1>MEDICAL RECORDS</h1>
-                                <p>Articulation Association</p>
-                                <p>Residents' Social</p>
-                                <p>Merchants in the Neighborhood of Peixinhos - AASCMBP</p>
-                                <p> CNPJ: 19.007.800/0001-62 </p>
-                            </address>
-                            <span>
-                                {/* <!--<img alt="it" src="base64imagecodehere" width="150">--> */}
-                            </span>
-                        </header>
+            <div className="container-pdf-form">
+                <div ref={containerRef}>
+                    <header>
                         <address>
-                            <h3>PATIENT DATA:</h3>
-                            <p> NAME: </p>
-                            <p> BIRTH DATE:</p>
-                            <p> SEX:</p>
-                            <p> MOTHER'S NAME: </p>
-                            <p> SUS CARD: </p>
-                            <p> CPF: </p>
-                            <p> RG: </p>
-                            <p> ISSUE DATE:</p>
-                            <p> ZIP CODE: </p>
-                            <p> ADDRESS: </p>
-                            <p> UF:</p>
-                            <p> CITY:</p>
-                            <p>Neighborhood: </p>
-                            <p> PHONE: </p>
-                            <h3>PATIENT INFORMATION:</h3>
+                            <h1>REGISTROS MÉDICOS</h1>
+                            <p>Associação de Articulação</p>
+                            <p>Social dos Residentes</p>
+                            <p>Comerciantes do Bairro de Peixinhos - AASCMBP</p>
+                            <p> CNPJ: 19.007.800/0001-62 </p>
                         </address>
-                        <p className="information"><span></span></p>
-                    </div>
+                        <span>
+                            {/* <!--<img alt="it" src="base64imagecodehere" width="150">--> */}
+                        </span>
+                    </header>
+                    <address>
+                        <h3>Dados do paciente:</h3>
+                        <p> Nome: </p>
+                        <p> Data de Nascimento:</p>
+                        <p> Sexo:</p>
+                        <p> Nome da mãe: </p>
+                        <p> Cartão SUS: </p>
+                        <p> CPF: </p>
+                        <p> RG: </p>
+                        <p> Data de emissão:</p>
+                        <p> Código postal: </p>
+                        <p> Logradouro: </p>
+                        <p> UF:</p>
+                        <p> Cidade:</p>
+                        <p> Bairro: </p>
+                        <p> Telefone: </p>
+                        <h3> Informação do paciente:</h3>
+                    </address>
+                    <p className="information"><span></span></p>
                 </div>
+            </div>
         </Layout >
     )
 }
