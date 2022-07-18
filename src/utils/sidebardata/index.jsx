@@ -6,19 +6,16 @@ export const SideBar = [
     {
         title: 'Forms',
         path: '/post',
-        icon: <IoIcons.IoIosPaper/>,
         cName: 'nav-text'
     },
     {
         title: 'search',
         path: '/search',
-        icon: <AiIcons.AiOutlineFileSearch/>,
         cName: 'nav-text'
     },
     {
         title: 'PDF',
         path: '/pdf',
-        icon: <AiIcons.AiFillFilePdf/>,
         cName: 'nav-text'
     }
     // {
