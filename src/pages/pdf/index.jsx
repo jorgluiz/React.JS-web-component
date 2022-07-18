@@ -74,7 +74,7 @@ const PdfPage = () => {
                 <div ref={containerRef}>
                     <header>
                         <address>
-                            <h1>REGISTROS MÉDICOS</h1>
+                            <h1>REGISTROS MÉDICOS</h1> 
                             <p>Associação de Articulação</p>
                             <p>Social dos Residentes</p>
                             <p>Comerciantes do Bairro de Peixinhos - AASCMBP</p>
