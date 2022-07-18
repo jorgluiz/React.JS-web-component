@@ -79,7 +79,7 @@ const PdfPage = () => {
                             <p>Social dos Residentes</p>
                             <p>Comerciantes do Bairro de Peixinhos - AASCMBP</p>
                             <p> CNPJ: 19.007.800/0001-62 </p>
-                        </address>
+                        </address> 
                         <span>
                             {/* <!--<img alt="it" src="base64imagecodehere" width="150">--> */}
                         </span>
